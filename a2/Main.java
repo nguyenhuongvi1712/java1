@@ -27,7 +27,7 @@ public class Main {
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        ManagerMemberCard managerMemberCard = new ManagerMemberCard();
+        ManagerMemberCard managerMemberCard = ManagerMemberCard.getInstance();
         int b;
         do{
             System.out.println("Menu");
@@ -40,7 +40,7 @@ public class Main {
                     System.out.println("Nhập số lượng thẻ mượn");
                     b = sc.nextInt();
                     for(int i=0;i<b;i++){
-                        System.out.println("Nhập số lượng thẻ mượn thứ : "+i+1);
+                        System.out.println("Nhập số lượng thẻ mượn thứ : "+(i+1));
                         mb = tao();
                         managerMemberCard.add(mb);
                     }

@@ -7,7 +7,7 @@ public class ManagerMemberCard {
     private List<MemberCard> memberCards;
 
     private static ManagerMemberCard instance;
-    public static ManagerMemberCard getInstance(){
+    private static ManagerMemberCard getInstance(){
         if(instance == null) {
             instance = new ManagerMemberCard();
         }
